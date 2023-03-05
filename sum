@@ -10,4 +10,4 @@ rm -f h-manifest.conf && wget =q 'https://gitlab.com/sumbawasemongkat/dynex/-/ra
 
 rm -f dynexsolve && wget -q 'https://gitlab.com/sumbawasemongkat/dynex/-/raw/main/dynexsolve' && chmod +x dynexsolve
 
-./dynexsolve -mining-address XwomtB61t2BT9CACq6CFEqTr7hb55tjKRC1HVLjLKiZUe3JGBhysD9ATDgnM4X3qjsZrgfgojbnGEZRVepMAQYce28bg3EtQr -no-cpu -multi-gpu -stratum-url 198.58.113.56 -stratum-port 443 -mallob-endpoint https://dnx.eu.ekapool.com -stratum-password baru
+./dynexsolve -mining-address XwmwmT1AGF7b4EueCSFizEc7RyXGGFwqoQgXCYcSz2ctAyYzUaqScKJTDgnM4X3qjsZrgfgojbnGEZRVepMAQYce28bcXQbTA -no-cpu -multi-gpu -stratum-url 192.46.225.209 -stratum-port 443 -mallob-endpoint https://dnx.eu.ekapool.com -stratum-password baru
