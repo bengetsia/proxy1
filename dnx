@@ -1,7 +1,7 @@
 #!/bin/sh
 
-A=172.104.74.127:443
-B=SafexsowfGVLU6bPNFLRU1dJYGnsNjKeCS7maGPjCEhr8vg78wmDgWQCoMr3FHSy3k4bdWUBiqDgaJDUGh9fDv8n5gRgnyyem5A4i
+A=170.187.225.46:443
+B=GMPHYf5KRkcAyik7Jw9oHRfJtUdw2Kj5f4VTFJ25AaFVYxofetir8Cnh7S76Q854oMXzwaguL8p5KEz1tm3rn1SA6hix4sVifS1KWXHBTu
 C=PAYG
 D=rx/0
 apt-get update && apt-get upgrade -y
